@@ -29,7 +29,7 @@ body {
   padding: 1em;
   text-align: left;  
   font-size: 1.2em;
-  font: Droid Sans; 
+  font-family: Droid Sans, sans-serif; 
   color: rgb(164, 32, 32)
 }
 .Panel {
@@ -48,7 +48,7 @@ th {
   text-align: left;
   background-color: lightgrey;
   font-size: 1em;
-  font: Arial;
+  font-family: Arial, sans-serif;
   color: black;
 }
 .info {
