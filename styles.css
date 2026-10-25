@@ -4,75 +4,74 @@
 body {
   background-color: rgb(212, 163, 171);
   width: 100%;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 6em;
+  margin-right: 6em;
 }
 .bild-1 {
-  width: 640px;
-  height: 260px;
-  margin-top: -8px;
+  width: 100%;
+  height: 15em;
+  margin-top: -1em;
   margin-left: inherit;
   margin-right: inherit;
   box-sizing: border-box;
 }
 .bild-1 img {
   width: 100%;
-  height: 100%;
-  object-fit: fill;
+  height: auto;
 }
 .Rubrik {
   background-color: white;
-  width: 640px;
-  height: 90px;
-  margin-top: -25px;
+  width: 40em;
+  height: 6em;
+  margin-top: -1em;
   margin-left: inherit;
   margin-right: inherit;
-  padding: 15px;
+  padding: 1em;
   text-align: left;  
-  font-size: 20px;
+  font-size: 1.2em;
   font: Droid Sans; 
   color: rgb(164, 32, 32)
 }
 .Panel {
   background-color: white;
-  width: 640px;
-  height: 90px;
-  margin-top: -30px;
+  width: 40em;
+  height: 6em;
+  margin-top: -2em;
   margin-left: inherit;
   margin-right: inherit;
-  padding-left: 15px;
-  padding-bottom: 10px;
+  padding-left: 1em;
+  padding-bottom: 1em;
 }
 th {
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: .8em;
+  padding-bottom: .8em;
   text-align: left;
   background-color: lightgrey;
-  font-size: 16px;
+  font-size: 1em;
   font: Arial;
   color: black;
 }
 .info {
   background-color: white;
-  width: 640px;
-  height: 820px;
-  margin-top: -25px;
+  width: 40em;
+  height: auto;
+  margin-top: -1.5em;
   margin-left: inherit;
   margin-right: inherit;
-  padding-left: 15px;
-  padding-bottom: 15px;
+  padding-left: 1em;
+  padding-bottom: 1em;
   text-align: left;  
-  font-size: 18px;
+  font-size: 1.2em;
   font: Droid Sans; 
   color:black
 }
 .punkt-lista {
-    font-size: 15px;
+    font-size: 1em;
 }
 
 .image-gallery {
   display: flex;
-  gap: 16px; 
+  gap: 1em; 
 }
 .image-gallery img {
   width: 47%;
@@ -80,7 +79,7 @@ th {
   object-fit: cover; 
 }
 
-@media (min-width: 600px) { 
+@media screen and (min-width: 40em) { 
   .bild-1 {
     width: 60%;
     height: auto;
