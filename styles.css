@@ -3,66 +3,54 @@
 }
 body {
   background-color: rgb(212, 163, 171);
-  width: 100%;
-  margin-left: 6em;
-  margin-right: 6em;
+}
+.content-wrapper {
+  background-color: white;
+  width: 90%;
+  margin: auto;  
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 .bild-1 {
   width: 100%;
-  height: 15em;
-  margin-top: -1em;
-  margin-left: inherit;
-  margin-right: inherit;
-  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  flex-shrink: 0;
 }
 .bild-1 img {
   width: 100%;
+  min-width: 100%;
   height: auto;
+  display: block;
 }
 .Rubrik {
-  background-color: white;
-  width: 40em;
-  height: 6em;
-  margin-top: -1em;
-  margin-left: inherit;
-  margin-right: inherit;
-  padding: 1em;
+  width: 100%;
+  padding-left: 0;
   text-align: left;  
   font-size: 1.2em;
   font-family: Droid Sans, sans-serif; 
   color: rgb(164, 32, 32)
 }
 .Panel {
-  background-color: white;
-  width: 40em;
-  height: 6em;
-  margin-top: -2em;
-  margin-left: inherit;
-  margin-right: inherit;
+  background-color: lightgray;
+  width: 100%;
   padding-left: 1em;
-  padding-bottom: 1em;
 }
-th {
-  padding-top: .8em;
-  padding-bottom: .8em;
-  text-align: left;
-  background-color: lightgrey;
-  font-size: 1em;
-  font-family: Arial, sans-serif;
-  color: black;
+.panel-text {
+  text-align: left;  
+  font-size: 1.2em;
+  font-family: Droid Sans, sans-serif; 
+  color:black
 }
 .info {
-  background-color: white;
-  width: 40em;
+  width: 100%;
   height: auto;
-  margin-top: -1.5em;
-  margin-left: inherit;
-  margin-right: inherit;
-  padding-left: 1em;
+  padding-left: 0;
   padding-bottom: 1em;
   text-align: left;  
   font-size: 1.2em;
-  font: Droid Sans; 
+  font-family: Droid Sans, sans-serif; 
   color:black
 }
 .punkt-lista {
@@ -80,21 +68,24 @@ th {
 }
 
 @media screen and (min-width: 40em) { 
-  .bild-1 {
+  .content-wrapper{
     width: 60%;
-    height: auto;
+    padding: 2em;
+  }
+  .bild-1 {
+    width: calc(100% + 4em);
+    margin-top: -2em;
+    margin-left: -2em;
+    margin-right: -2em;
   }
   .Rubrik {
-    width: 60%;
-    height: auto;
+    width: 100%;
   }
   .Panel {
-    width: 60%;
-    height: auto;
+    width: 100%;
   }
   .info {
-    width: 60%;
-    height: auto;
+    width: 100%;
   }
 } 
 
