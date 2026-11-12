@@ -19,6 +19,7 @@ body {
   background-color: rgb(212, 163, 171);
   line-height: 1.8;
   font-family: var(--main-font);
+
   h2 {
     font-size: 1.5em;
     font-weight: bold;
@@ -37,6 +38,7 @@ body {
   font-weight: 700;
   border: 2px solid #000;
   border-radius: 4px;
+
   &:focus {
   top: 1rem;
   }
@@ -45,22 +47,24 @@ body {
 .content-wrapper {
   background-color: white;
   width: 90%;
-  margin: auto; 
+  margin: auto;
+  padding: 1em; 
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 .bild-1 {
-  width: 100%;
-  margin: 0;
+  width: calc(var(--width) + 2em);
+  margin: -1em -1em 1em -1em;
   padding: 0;
   flex-shrink: 0;
-}
-.bild-1 img {
+
+  & img {
   width: 100%;
   min-width: 100%;
   height: auto;
   display: block;
+  }
 }
 .Rubrik {
   text-align: left; 
@@ -70,9 +74,10 @@ body {
 }
 .panel {
   text-align: left;
+  width: var(--width);
   & p.panel {
     background-color: lightgray;
-    padding-left: 1em;
+    padding: 0.5em 1em;
     font-size: 1em;
     color:black
   }
@@ -82,13 +87,18 @@ body {
   padding-bottom: 1em;
   text-align: left;  
   font-size: 1em;
-  padding-left: 1.5em;
   color:black
+
+  & ul,
+  & ol {
+    padding-left: 1em;
+  }
 }
 
 .image-gallery {
   display: flex;
   gap: 1em; 
+
   & img {
   width: calc(50% - 0.5em);
   height: auto; 
@@ -104,14 +114,7 @@ body {
   }
   .bild-1 {
     width: calc(var(--width) + 4em);
-    margin-top: -2em;
-    margin-left: -2em;
-    margin-right: -2em;
-  }
-  .Rubrik,
-  .panel,
-  .info {
-    width: var(--width);
+    margin: -2em -2em 1em -2em;
   }
 } 
 
