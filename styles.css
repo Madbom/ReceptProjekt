@@ -1,28 +1,45 @@
+:root {
+  --width: 100%;
+  --main-font: 'Droid Sans', Arial, sans-serif;
+}
+
 * {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
+
 body {
   background-color: rgb(212, 163, 171);
-  margin: 0;
+  line-height: 1.8;
+  font-family: var(--main-font);
+  h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
 }
 
 /* Skip link */
 .skip-link {
-    position: absolute;
-    top: -100px;
-    left: 1rem;
-    z-index: 1000;
-
-    padding: 0.75rem 1.5rem;
-    background: #fff;
-    color: #000;
-    font-weight: 700;
-    border: 2px solid #000;
-    border-radius: 4px;
-}
-
-.skip-link:focus {
-    top: 1rem;
+  position: absolute;
+  top: -100px;
+  left: 1rem;
+  z-index: 1000;
+  padding: 0.75rem 1.5rem;
+  background: #fff;
+  color: #000;
+  font-weight: 700;
+  border: 2px solid #000;
+  border-radius: 4px;
+  &:focus {
+  top: 1rem;
+  }
 }
 
 .content-wrapper {
@@ -33,44 +50,34 @@ body {
   display: flex;
   flex-direction: column;
 }
-.bild-1 {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  flex-shrink: 0;
-}
-.bild-1 img {
-  width: 100%;
-  min-width: 100%;
+.bild-1{
+  &,
+  & img {
   height: auto;
   display: block;
+  width: var(--width);
+  }
 }
 .Rubrik {
-  width: 100%;
-  padding-left: 0;
-  text-align: left;  
-  font-size: 1em;
-  font-family: Droid Sans, sans-serif; 
+  text-align: left; 
+  font-size: clamp(1.25rem, 5vw, 2rem);
+  font-weight: bold;
   color: rgb(164, 32, 32)
 }
-.Panel {
-  background-color: lightgray;
-  width: 100%;
-  padding-left: 1em;
-}
-.panel-text {
-  text-align: left;  
-  font-size: 1em;
-  font-family: Droid Sans, sans-serif; 
-  color:black
+.panel {
+  text-align: left;
+  & p.panel {
+    background-color: lightgray;
+    padding-left: 1em;
+    font-size: 1em;
+    color:black
+  }
 }
 .info {
-  width: 100%;
   height: auto;
   padding-bottom: 1em;
   text-align: left;  
   font-size: 1em;
-  font-family: Droid Sans, sans-serif; 
   color:black
 }
 .punkt-lista {
@@ -80,11 +87,12 @@ body {
 .image-gallery {
   display: flex;
   gap: 1em; 
-}
-.image-gallery img {
-  width: 48%;
+  & img {
+  width: calc(50% - 0.5em);
   height: auto; 
-  object-fit: cover; 
+  object-fit: cover;
+  display: block;
+  } 
 }
 
 @media screen and (min-width: 40em) { 
@@ -93,19 +101,15 @@ body {
     padding: 2em;
   }
   .bild-1 {
-    width: calc(100% + 4em);
+    width: calc(var(--width) + 4em);
     margin-top: -2em;
     margin-left: -2em;
     margin-right: -2em;
   }
-  .Rubrik {
-    width: 100%;
-  }
-  .Panel {
-    width: 100%;
-  }
+  .Rubrik,
+  .panel,
   .info {
-    width: 100%;
+    width: var(--width);
   }
 } 
 
