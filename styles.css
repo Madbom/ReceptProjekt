@@ -50,13 +50,17 @@ body {
   display: flex;
   flex-direction: column;
 }
-.bild-1{
-  &,
-  & img {
+.bild-1 {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  flex-shrink: 0;
+}
+.bild-1 img {
+  width: 100%;
+  min-width: 100%;
   height: auto;
   display: block;
-  width: var(--width);
-  }
 }
 .Rubrik {
   text-align: left; 
@@ -78,10 +82,8 @@ body {
   padding-bottom: 1em;
   text-align: left;  
   font-size: 1em;
+  padding-left: 1.5em;
   color:black
-}
-.punkt-lista {
-    font-size: 1em;
 }
 
 .image-gallery {
@@ -96,7 +98,7 @@ body {
 }
 
 @media screen and (min-width: 40em) { 
-  .content-wrapper{
+  .content-wrapper {
     width: 70%;
     padding: 2em;
   }
