@@ -52,13 +52,25 @@ body {
   background: var(--color-surface);
   color: var(--color-text);
   font-weight: 700;
-  border: 2px solid var(--color-primary);
+  border: 2px solid var(--color-bg);
   border-radius: var(--radius-sm);
 
   &:focus {
   top: var(--space-md);
   }
 }
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid var(--color-primary); 
+  outline-offset: 3px;
+}
+
+[tabindex]:focus {
+  outline: 2px solid var(--color-primary);
+}
+
 
 .content-wrapper {
   background-color: var(--color-surface);
@@ -113,7 +125,6 @@ body {
 /* Bocka av ingredienser */
 .ingredient-list {
   list-style: none;
-  padding-left: 0;
   margin-top: var(--space-sm);
 
   & li {
