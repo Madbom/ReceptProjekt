@@ -60,6 +60,13 @@ body {
   }
 }
 
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
 .content-wrapper {
   background-color: var(--color-surface);
   width: 90%;
