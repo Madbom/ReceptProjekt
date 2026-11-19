@@ -87,13 +87,17 @@ input:focus-visible {
   gap: var(--space-sm);
 
   & .logo {
+<<<<<<< HEAD
     display: flex;
     align-items: center;
     gap: 0.6rem;
+=======
+>>>>>>> b7e366c13c0e8449d990db276fb1aa9527218747
     font-weight: bold;
     font-size: 1.25rem;
     color: var(--color-primary);
     text-decoration: none;
+<<<<<<< HEAD
     
     & .logo-badge {
       display: flex;
@@ -109,6 +113,8 @@ input:focus-visible {
     & strong {
       font-weight: bold;
     }
+=======
+>>>>>>> b7e366c13c0e8449d990db276fb1aa9527218747
   }
 
   & nav {
@@ -289,6 +295,14 @@ input:focus-visible {
   color: var(--color-primary);
 }
 
+<<<<<<< HEAD
+=======
+.recipe-intro {
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+>>>>>>> b7e366c13c0e8449d990db276fb1aa9527218747
 .recipe-facts {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -297,6 +311,18 @@ input:focus-visible {
   background-color: var(--color-panel);
   text-align: center;
   margin-top: auto;
+<<<<<<< HEAD
+=======
+
+  & div {
+    padding: 0.6rem var(--space-sm);
+    font-weight: bold;
+    font-size: 0.95rem;
+    &:not(:last-child) {
+      border-right: 1px solid var(--color-border);
+    }
+  }
+>>>>>>> b7e366c13c0e8449d990db276fb1aa9527218747
 } 
 
 .info {
@@ -377,7 +403,12 @@ input:focus-visible {
 
 @media screen and (min-width: 40em) {
   .content-wrapper,
+<<<<<<< HEAD
   .site-header{
+=======
+  .site-header,
+  .site-footer {
+>>>>>>> b7e366c13c0e8449d990db276fb1aa9527218747
     width: 70%;
     padding: 2em;
   }
