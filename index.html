@@ -1,93 +1,112 @@
 <!DOCTYPE html>
 <html lang="sv">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Receptsajten – Enkla vardagsrecept</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receptsajten – Enkla vardagsrecept</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!-- Skip link -->
+    <a href="#main-content" class="skip-link">Hoppa till huvudinnehåll</a>
+    <div class="content-wrapper">
+      <header class="site-header">
 
-  <!-- Skip link -->
-  <a href="#main-content" class="skip-link">Hoppa till huvudinnehåll</a>
+        <a class="logo">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M6 13.87A4 4 0 0 1 7.41 6a5.11 5.11 0 0 1 1.05-1.54 5 5 0 0 1 7.08 0A5.11 5.11 0 0 1 16.59 6 4 4 0 0 1 18 13.87V21H6Z"/>
+            <line x1="6" y1="17" x2="18" y2="17"/>
+        </svg>
+        <span>RECEPT<strong>SAJTEN</strong></span></a>
 
-  <header class="site-header">
+        <nav aria-label="Huvudmeny">
+          <a href="index.html">Hem</a>
+          <a href="#">Om sajten</a>
+          <a href="dela-recept.html" class="button">Dela recept</a>
+        </nav>
+      </header>
 
-    <a class="logo">
-    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <path d="M6 13.87A4 4 0 0 1 7.41 6a5.11 5.11 0 0 1 1.05-1.54 5 5 0 0 1 7.08 0A5.11 5.11 0 0 1 16.59 6 4 4 0 0 1 18 13.87V21H6Z"/>
-        <line x1="6" y1="17" x2="18" y2="17"/>
-    </svg>
-    <span>RECEPT<strong>SAJTEN</strong></span>
-    </a>
-    
-    <nav aria-label="Huvudmeny">
-      <a href="index.html">Hem</a>
-      <a href="#">Om sajten</a>
-      <a href="dela-recept.html" class="button">Dela recept</a>
-    </nav>
-  </header>
+      <main id="main-content" tabindex="-1">
+        <!-- Site-sektion (Bild med rubrik ovanpå) -->
+        <section class="site" aria-labelledby="site-rubrik">
+          <img src="Image/bild4.jfif" alt="Matbord med frukost och kaffe">
+          <div class="site-overlay">
+            <h1 id="site-rubrik">Enkla recept för alla dagar</h1>
+            <p>Hitta inspiration till frukost, middag och fika.</p>
+          </div>
+        </section>
 
-  <main id="main-content" tabindex="-1" class="content-wrapper">
-    <!-- Site-sektion (Bild med rubrik ovanpå) -->
-    <section class="site" aria-labelledby="site-rubrik">
-      <img src="Image/bild4.jfif" alt="Matbord med frukost och kaffe">
-      <div class="site-overlay">
-        <h1 id="site-rubrik">Enkla recept för alla dagar</h1>
-        <p>Hitta inspiration till frukost, middag och fika.</p>
+        <nav class="dish-list" aria-label="Kategorier">
+          <a href="#" class="dish">Frukost</a>
+          <a href="#" class="dish">Middag</a>
+          <a href="#" class="dish">Efterrätt</a>
+          <a href="#" class="dish">Fika</a>
+        </nav>
+
+        <!-- Receptkort -->
+        <section aria-labelledby="populara-rubrik">
+          <h2 id="populara-rubrik">Populära recept</h2>
+          <div class="recipe-grid">
+            
+            <!-- Kort 1 -->
+            <article class="recipe-card">
+              <img src="Image/bild1.jpg" alt="Nygräddade pannkakor">
+              <div class="card-content">
+                <h3><a href="pannkakor.html">Klassiska pannkakor</a></h3>
+                <p class="meta">30 min</p>
+              </div>
+            </article>
+
+            <!-- Kort 2 -->
+            <article class="recipe-card">
+              <img src="Image/bild5.jpg" alt="Havsöring i ugn">
+              <div class="card-content">
+                <h3><a href="havsoring.html">Havsöring i ugn</a></h3>
+                <p class="meta">45 min</p>
+              </div>
+            </article>
+
+            <!-- Kort 3 -->
+            <article class="recipe-card">
+              <img src="Image/bild6.jfif" alt="Cheescake med bär">
+              <div class="card-content">
+                <h3><a href="cheescake.html">Cheescake med bär</a></h3>
+                <p class="meta">20 min</p>
+              </div>
+            </article>
+
+            <!-- Kort 4 -->
+            <article class="recipe-card">
+              <img src="Image/bild7.jpg" alt="Kaffe och kakor">
+              <div class="card-content">
+                <h3><a href="kaffe-och-kakor.html">Kaffe och kakor!</a></h3>
+                <p class="meta">20 min</p>
+              </div>
+            </article>
+
+          </div>
+        </section>
+      </main>
+      
+      <footer>
+      <div class="footer-left">
+        <a href="index.html" class="logo">
+          <span>RECEPT<strong>SAJTEN</strong></span>
+        </a>
+        <p>Enkla vardagsrecept som alla kan laga.</p>
       </div>
-    </section>
 
-    <nav class="dish-list" aria-label="Kategorier">
-      <a href="frukost.html" class="dish">Frukost</a>
-      <a href="middag.html" class="dish">Middag</a>
-      <a href="efterratt.html" class="dish">Efterrätt</a>
-      <a href="fika.html" class="dish">Fika</a>
-    </nav>
-
-    <!-- Receptkort -->
-    <section aria-labelledby="populara-rubrik">
-      <h2 id="populara-rubrik">Populära recept</h2>
-      <div class="recipe-grid">
-        
-        <!-- Kort 1 -->
-        <article class="recipe-card">
-          <img src="Image/bild1.jpg" alt="Nygräddade pannkakor">
-          <div class="card-content">
-            <h3><a href="pannkakor.html">Klassiska pannkakor</a></h3>
-            <p class="meta">30 min</p>
-          </div>
-        </article>
-
-        <!-- Kort 2 -->
-        <article class="recipe-card">
-          <img src="Image/bild5.jpg" alt="Havsöring i ugn">
-          <div class="card-content">
-            <h3><a href="havsoring.html">Havsöring i ugn</a></h3>
-            <p class="meta">45 min</p>
-          </div>
-        </article>
-
-        <!-- Kort 3 -->
-        <article class="recipe-card">
-          <img src="Image/bild6.jfif" alt="Cheescake med bär">
-          <div class="card-content">
-            <h3><a href="cheescake.html">Cheescake med bär</a></h3>
-            <p class="meta">20 min</p>
-          </div>
-        </article>
-
-        <!-- Kort 4 -->
-        <article class="recipe-card">
-          <img src="Image/bild7.jpg" alt="Kaffe och kakor">
-          <div class="card-content">
-            <h3><a href="kaffe-och-kakor.html">Kaffe och kakor!</a></h3>
-            <p class="meta">20 min</p>
-          </div>
-        </article>
-
+      <div class="footer-right">
+        <a href="#">Om sajten</a>
+        <p class="footer-heading">Fler recept</p>
+        <a href="#" class="dish">Frukost</a>
+        <a href="#" class="dish">Middag</a>
+        <a href="#" class="dish">Efterrätt</a>
+        <a href="#" class="dish">Fika</a>
       </div>
-    </section>
-  </main>
-</body>
+
+      <p class="footer-credits">Bilder från picsum.photos · © 2026 Mario Madbom</p>
+    </footer>
+    </div>
+  </body>
 </html>
