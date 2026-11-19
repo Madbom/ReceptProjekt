@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frukost – Receptsajten</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Hoppa till huvudinnehåll</a>
+
+  <header class="site-header">
+    <a class="logo">RECEPTSAJTEN</a>
+    <nav aria-label="Huvudmeny">
+      <a href="index.html">Hem</a>
+      <a href="#">Om sajten</a>
+      <a href="dela-recept.html" class="button">Dela recept</a>
+    </nav>
+  </header>
+
+  <main id="main-content" tabindex="-1" class="content-wrapper">
+    <nav class="dish-list" aria-label="Kategorier">
+      <a href="frukost.html" class="dish active" aria-current="page">Frukost</a>
+      <a href="middag.html" class="dish">Middag</a>
+      <a href="efterratt.html" class="dish">Efterrätt</a>
+      <a href="fika.html" class="dish">Fika</a>
+    </nav>
+
+    <section aria-labelledby="kategori-rubrik">
+      <h1 id="kategori-rubrik">Frukostrecept</h1>
+      <div class="recipe-grid">
+        <!-- Alla frukostkort -->
+        <article class="recipe-card">
+          <img src="bild1.jpg" alt="Nygräddade pannkakor">
+          <div class="card-content">
+            <h3><a href="pannkakor.html">Klassiska pannkakor</a></h3>
+            <p class="meta">30 min</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
