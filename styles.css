@@ -40,7 +40,6 @@ body {
   color: var(--color-text);
   line-height: 1.8;
   font-family: var(--main-font);
-  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -73,8 +72,10 @@ body {
 
 a:focus-visible,
 button:focus-visible,
-input:focus-visible {
-  outline: 3px solid var(--color-primary); 
+input:focus-visible 
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--color-primary);
   outline-offset: 3px;
 }
 
@@ -116,8 +117,9 @@ input:focus-visible {
   }
 }
 
-main {
-  flex: 1;
+main,
+fieldset {
+  min-width: 0;
 }
 
 .button {
@@ -384,7 +386,75 @@ footer {
   }
 }
 
+form {
+  display: grid;
+  gap: 1.25rem;
+  padding: 1rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+label {
+  font-weight: 500;
+}
+
+input,
+select,
+textarea,
+button {
+  font: inherit;
+}
+
+input:not([type="checkbox"], [type="radio"]),
+select,
+textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #888;
+  border-radius: 0.25rem;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: var(--radius-sm);
+  padding: 0.75rem;
+}
+
+button {
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+}
+
+input:user-invalid,
+select:user-invalid,
+textarea:user-invalid {
+  border-color: #dc2626;
+}
+
+input:user-valid {
+  border-color: green;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem; 
+}
+
 @media screen and (min-width: 40em) {
+   form {
+    padding: 2rem;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  fieldset {
+    padding: 1rem;
+  }
+
   .content-wrapper{
     width: 70%;
     padding: 2em;

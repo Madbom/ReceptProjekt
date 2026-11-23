@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receptsajten – Enkla vardagsrecept</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+        <!-- Skip link -->
+        <a href="#main-content" class="skip-link">Hoppa till huvudinnehåll</a>
+        <div class="content-wrapper">
+            <header class="site-header">
+                <a class="logo">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M6 13.87A4 4 0 0 1 7.41 6a5.11 5.11 0 0 1 1.05-1.54 5 5 0 0 1 7.08 0A5.11 5.11 0 0 1 16.59 6 4 4 0 0 1 18 13.87V21H6Z"/>
+                    <line x1="6" y1="17" x2="18" y2="17"/>
+                </svg>
+                <span>RECEPT<strong>SAJTEN</strong></span></a>
+
+                <nav aria-label="Huvudmeny">
+                    <a href="index.html">Hem</a>
+                    <a href="#">Om sajten</a>
+                    <a href="dela-recept.html" class="button">Dela recept</a>
+                    </nav>
+            </header>
+            
+            <main id="main-content">
+                <h1>Dela ditt recept</h1>
+                <p>Har du ett recept som du vill dela med andra? Fyll i formuläret 
+                    nedan och skicka in ditt recept till oss. Vi ser fram emot att 
+                    få ta del av dina kulinariska skapelser!</p>
+                
+                <form action="#" method="post">
+                    
+                    <fieldset>
+                        <legend>Om receptet</legend>
+                        <div>                        
+                        <label for="recipe-name">Receptnamn:</label>
+                        <input type="text" id="recipe-name" name="recipe-name" required>
+                        </div>
+
+                        <div>
+                            <label for="kategori">Välj kategori:</label>
+                            <select id="kategori" name="kategori">
+                            <option value="frukost">Frukost</option>
+                            <option value="lunch">Lunch</option>
+                            <option value="middag">Middag</option>
+                            <option value="dessert">Dessert</option>
+                            </select>
+                          </div>
+
+                          <div class="form-row">
+                            <div>
+                            <label for="prep-time">Tid i minuter:</label>
+                            <input type="number" id="prep-time" min="1" name="prep-time" required>
+                            </div>
+                            <div>
+                            <label for="portions">Antal portioner:</label>
+                            <input type="number" id="portions" name="portions" min="1" required>
+                            </div>
+                          </div>   
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Svårighetsgrad</legend>
+                        <div>
+                        <input type="radio" id="easy" name="svårighetsgrad" value="easy" checked>
+                        <label for="easy">Lätt</label>
+                        
+                        <input type="radio" id="intermediate" name="svårighetsgrad" value="intermediate">
+                        <label for="intermediate">Medel</label>
+                        
+                        <input type="radio" id="difficult" name="svårighetsgrad" value="difficult">
+                        <label for="difficult">Svår</label>
+                        </div>
+                    </fieldset>
+
+                    
+                    <fieldset>
+                    <legend>Receptet</legend>
+                    <div>
+                    <label for="ingredients">Ingredienser:</label>
+                    <textarea id="ingredients" name="ingredients" rows="5" required></textarea>
+                    </div>
+                    <div>
+                    <label for="instructions">Gör så här:</label>
+                    <textarea id="instructions" name="instructions" rows="5" required></textarea>
+                    </div>
+                    </fieldset>
+                    
+                    <fieldset>
+                    <legend>Om dig</legend>
+                    <div>
+                    <label for="name">Ditt namn:</label>
+                    <input type="text" id="name" name="name" required autocomplete="name">  
+                    </div>
+                    <div>
+                    <label for="email">E-postadress:</label>
+                    <input type="email" id="email" name="email" placeholder="example@gmail.com" required autocomplete="email">
+                    </div>
+                    </fieldset>
+                    
+                    <button type="submit">Skicka in recept</button>
+                </form>
+            </main>
+            <footer>
+            <div class="footer-left">
+                <a href="index.html" class="logo">
+                <span>RECEPT<strong>SAJTEN</strong></span>
+                </a>
+                <p>Enkla vardagsrecept som alla kan laga.</p>
+            </div>
+
+            <div class="footer-right">
+                <a href="#">Om sajten</a>
+                <p class="footer-heading">Fler recept</p>
+                <a href="#" class="dish">Frukost</a>
+                <a href="#" class="dish">Middag</a>
+                <a href="#" class="dish">Efterrätt</a>
+                <a href="#" class="dish">Fika</a>
+            </div>
+
+            <p class="footer-credits">Bilder från picsum.photos · © 2026 Mario Madbom</p>
+            </footer>
+        </div>
+    </body>
+</html>
