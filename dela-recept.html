@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Receptsajten – Enkla vardagsrecept</title>
+    <link rel="stylesheet" type="text/css" href="https://seasonal-css.incoherency.co.uk/seasonal.css">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
@@ -96,7 +97,7 @@
             </div>
             <div>
               <label for="email">E-postadress:</label>
-              <input type="email" id="email" name="email" placeholder="example@gmail.com" required autocomplete="email">
+              <input type="email" id="email" name="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" placeholder="example@gmail.com" required autocomplete="email">
             </div>
           </fieldset>
           

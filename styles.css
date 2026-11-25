@@ -1,11 +1,11 @@
 :root {
-  --color-bg: rgb(212, 163, 171);
-  --color-surface: #ffffff;
-  --color-primary: rgb(164, 32, 32);
-  --color-text: #1a1a1a;
-  --color-muted: #666666;
-  --color-panel: #e6e6e6;
-  --color-border: #dddddd;
+  --color-bg: var(--seasonal-bg, oklch(76% 0.06 7.8));
+  --color-surface: oklch(100% 0.00011 271.152);
+  --color-primary:  oklch(46% 0.17 28);
+  --color-text: oklch(22% 0.00003 271);
+  --color-muted: oklch(51% 0.00006 271);
+  --color-panel: oklch(90% 0.0001 271);
+  --color-border: oklch(90% 0.0001 271);
   --main-font: 'Droid Sans', Arial, sans-serif;
   --radius-sm: 0.25rem;
   --radius-md: 0.5rem;
@@ -153,7 +153,7 @@ fieldset {
   border-radius: var(--radius-md);
   overflow: hidden;
   margin-bottom: var(--space-md);
-  background-color: #1a1a1a;
+  background-color: var(--color-bg);
 
   & img {
     width: 100%;
@@ -411,12 +411,12 @@ select,
 textarea {
   width: 100%;
   padding: 0.6rem;
-  border: 1px solid #888;
+  border: 1px solid oklch(62% 0.00007 270);
   border-radius: 0.25rem;
 }
 
 fieldset {
-  border: 1px solid #ccc;
+  border: 1px solid oklch(85% 0.0001 270);
   border-radius: var(--radius-sm);
   padding: 0.75rem;
 }
@@ -429,11 +429,11 @@ button {
 input:user-invalid,
 select:user-invalid,
 textarea:user-invalid {
-  border-color: #dc2626;
+  border-color: oklch(58% 0.20 28);
 }
 
 input:user-valid {
-  border-color: green;
+  border-color: oklch(50% 0.15 134);
 }
 
 .form-row {
